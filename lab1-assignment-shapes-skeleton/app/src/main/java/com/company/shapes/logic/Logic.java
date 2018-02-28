@@ -160,6 +160,130 @@ public class Logic
         }
     }
 
-    // TODO -- add your code here
+    /**
+     *
+     * @param length
+     *          the rectangle length
+     * @param width
+     *          the rectangle wigth
+     * @return
+     *          the rectangle area
+     */
+    public static double rectangleArea(double length, double width){
+        return(length*width);
+    }
 
+    /**
+     *
+     * @param length
+     *          the rectangle length
+     * @param width
+     *          the rectangle width
+     * @return
+     *          the rectangle perimeter
+     */
+    public static double rectanglePerimeter(double length, double width){
+        return (2*(length+width));
+    }
+
+    /**
+     *
+     * @param radius
+     *         the circle radius
+     * @return
+     *         the circle area
+     */
+    public static double circleArea(double radius){
+        return(Math.PI*radius*radius);
+    }
+
+    /**
+     *
+     * @param radius
+     *          the circle radius
+     * @return
+     *          the circle circumference
+     */
+    public static double circleCircumference(double radius){
+        return(2*Math.PI*radius);
+    }
+
+    /**
+     *
+     * @param base
+     *          the triangle base
+     * @param height
+     *          the triangle height
+     * @return
+     *          the right triangle area
+     */
+    public static double rightTriangleArea(double base, double height){
+        return(0.5*base*height);
+    }
+
+    /**
+     *
+     * @param base
+     *          the triangle base
+     * @param height
+     *          the triangle height
+     * @return
+     *          the right triangle perimeter
+     */
+    public static double rightTrianglePerimeter(double base, double height){
+        double c = Math.sqrt(base*base+height*height);
+        return(base+height+c);
+    }
+
+    /**
+     *
+     * @param length
+     *          the box length
+     * @param width
+     *          the box width
+     * @param depth
+     *          the box depth
+     * @return
+     *          the box volume
+     */
+    public static double boxVolume(double length, double width, double depth){
+        return(length*width*depth);
+    }
+
+    /**
+     *
+     * @param length
+     *          the box length
+     * @param width
+     *          the box width
+     * @param depth
+     *          the box depth
+     * @return
+     *          the box surface area
+     */
+    public static double boxSurfaceArea(double length, double width, double depth){
+        return(2*(length*width+length*depth+width*depth));
+    }
+
+    /**
+     *
+     * @param radius
+     *          the sphere radius
+     * @return
+     *          the sphere volume
+     */
+    public static double sphereVolume(double radius) {
+        return((4.0/3.0)*Math.PI*radius*radius*radius);
+    }
+
+    /**
+     *
+     * @param radius
+     *          the sphere radius
+     * @return
+     *          the sphere surface area
+     */
+    public static double sphereSurfaceArea(double radius){
+        return(4*Math.PI*radius*radius);
+    }
 }
