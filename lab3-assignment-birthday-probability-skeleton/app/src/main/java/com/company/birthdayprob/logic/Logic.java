@@ -1,5 +1,10 @@
 package com.company.birthdayprob.logic;
 
+import java.net.InterfaceAddress;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import com.company.birthdayprob.ui.OutputInterface;
@@ -76,7 +81,27 @@ public class Logic
      */
     public double calculate(int size, int count) {
         // TODO -- add your code here
-
+        int sovpadenie =0;
+        Map<Integer, Integer> str = new HashMap<Integer, Integer>();
+        for(int i=1; i<=count; i++)
+        {
+            Random rnd = new Random(i);
+            for(int k=1;k<=size; k++)
+            {
+                int h = rnd.nextInt(365);
+                if(str.containsKey(h) == true)
+                {
+                    sovpadenie++;
+                    break;
+                }
+                else
+                {
+                    str.put(h, h);
+                }
+            }
+            str.clear();
+        }
+        return ((double) sovpadenie / (double)count) *100;
     }
     // TODO - add your code here
 }
