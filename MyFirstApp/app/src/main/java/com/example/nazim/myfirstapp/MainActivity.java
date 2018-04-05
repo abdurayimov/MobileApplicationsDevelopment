@@ -28,15 +28,20 @@ public class MainActivity extends AppCompatActivity {
         if(!gameFinished)
         {
             int inp  =Integer.parseInt(etInput.getText().toString());
-            if(inp > guess)
-                tvInfo.setText(getResources().getString(R.string.ahead));
-            if(inp < guess)
-                tvInfo.setText(getResources().getString(R.string.behind));
-            if(inp == guess) {
-                tvInfo.setText(getResources().getString(R.string.hit));
-                bControl.setText(getResources().getString(R.string.play_more));
-                gameFinished=true;
+            if(inp<101 && inp>0)
+            {
+                if(inp > guess)
+                    tvInfo.setText(getResources().getString(R.string.ahead));
+                if(inp < guess)
+                    tvInfo.setText(getResources().getString(R.string.behind));
+                if(inp == guess) {
+                    tvInfo.setText(getResources().getString(R.string.hit));
+                    bControl.setText(getResources().getString(R.string.play_more));
+                    gameFinished = true;
+                }
             }
+            else
+                tvInfo.setText(getResources().getString(R.string.error));
         }
         else
         {
