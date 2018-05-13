@@ -1,0 +1,15 @@
+<resources>
+  <string name="app_name">Rocket Launch</string>
+  <string name="title_no_animation">Без анимации</string>
+  <string name="title_launch_rocket">Запустить ракету</string>
+  <string name="title_spin_rocket">Вращать ракету</string>
+  <string name="title_accelerate_rocket">Ускорить ракету</string>
+  <string name="title_launch_rocket_objectanimator">Запустить ракету (ObjectAnimator)</string>
+  <string name="launch_spin">Запустить и вращать (AnimatorSet)</string>
+  <string name="launch_spin_viewpropertyanimator">Запустить и вращать (ViewPropertyAnimator)</string>
+  <string name="title_with_doge">Не оставляйте Доге позади (Анимирование двух объектов)</string>
+  <string name="title_animation_events">События анимации</string>
+  <string name="title_there_and_back">Лететь туда и обратно (Опции анимации)</string>
+  <string name="title_jump_and_blink">Прыгнуть и моргнуть (Анимация в XML)</string>
+  <string name="title_color_animation">Цвет фона</string>
+</resources>
